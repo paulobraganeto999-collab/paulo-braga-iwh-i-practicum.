@@ -55,8 +55,8 @@ app.post('/update-cobj', async (req, res) => {
     const newRecord = {
         properties: {
             name: req.body.name,
-            species: req.body.brand,
-            bio: req.body.type
+            brand: req.body.brand,
+            type: req.body.type
         }
     };
     const url = `https://api.hubapi.com/crm/v3/objects/${CUSTOM_OBJECT}`;
