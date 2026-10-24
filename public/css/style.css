@@ -56,3 +56,28 @@ input[type="submit"] {
     padding: .375rem 1rem;
     margin-top: 10px;
 }
+
+a {
+    display: inline-block;
+    margin: 0 1rem 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 1rem;
+    min-width: 50%;
+}
+
+th, td {
+    padding: .5rem 1rem;
+    border: solid 1px lightgrey;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
