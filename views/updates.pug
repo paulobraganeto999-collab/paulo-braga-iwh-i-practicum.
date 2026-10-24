@@ -14,7 +14,7 @@ html
             label(for="type") Type
             select(id="type" name="type" required)
                 option(value="" disabled selected) Selecione um tipo
-                each option in typeOpitions
+                each option in typeOptions
                     option(value=option.value)= option.label    
             button(type="submit") Create
         a(href="/") Return to the homepage
