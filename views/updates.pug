@@ -12,6 +12,9 @@ html
             label(for="brand") Brand
             input(type="text" id="brand" name="brand")
             label(for="type") Type
-            input(type="dropdown_select" id="type" name="type")
+            select(id="type" name="type" required)
+                option(value="" disabled selected) Selecione um tipo
+                each option in typeOpitions
+                    option(value=option.value)= option.label    
             button(type="submit") Create
         a(href="/") Return to the homepage
