@@ -12,7 +12,7 @@ app.use(express.json());
 const PRIVATE_APP_ACCESS = process.env.TK_HUB;
 
 const CUSTOM_OBJECT = process.env.CUSTOM_OBJ_ID;
-const CUSTOM_PROPERTIES = ['name', 'species', 'bio'];
+const CUSTOM_PROPERTIES = ['name', 'brand', 'type'];
 
 const headers = {
     Authorization: `Bearer ${PRIVATE_APP_ACCESS}`,
@@ -45,8 +45,8 @@ app.post('/update-cobj', async (req, res) => {
     const newRecord = {
         properties: {
             name: req.body.name,
-            species: req.body.species,
-            bio: req.body.bio
+            species: req.body.brand,
+            bio: req.body.type
         }
     };
     const url = `https://api.hubapi.com/crm/v3/objects/${CUSTOM_OBJECT}`;
